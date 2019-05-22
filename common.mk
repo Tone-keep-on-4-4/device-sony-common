@@ -29,6 +29,11 @@ DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
+
+BUILD_KERNEL := true
+-include $(KERNEL_PATH)/common-headers/KernelHeaders.mk
+
 # Codecs Configuration
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
