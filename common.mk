@@ -31,6 +31,9 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
+# Force building a recovery image: Needed for OTA packaging to work since Q
+PRODUCT_BUILD_RECOVERY_IMAGE := true
+
 -include $(KERNEL_PATH)/common-headers/KernelHeaders.mk
 
 # Codecs Configuration
