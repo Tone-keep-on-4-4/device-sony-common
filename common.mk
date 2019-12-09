@@ -31,7 +31,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
 
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI
 
-BUILD_KERNEL := true
 -include $(KERNEL_PATH)/common-headers/KernelHeaders.mk
 
 # Codecs Configuration
