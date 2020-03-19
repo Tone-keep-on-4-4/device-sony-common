@@ -58,9 +58,6 @@ on init
     write /sys/block/zram0/comp_algorithm lz4
     write /proc/sys/vm/page-cluster 0
 
-    # Load persistent dm-verity state
-    verity_load_state
-
    # CAF powerhal permissions
     chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
     chown system system /sys/module/msm_dcvs/cores/cpu0/slack_time_max_us
@@ -200,9 +197,6 @@ on early-boot
 
     # Permission for LED driver
     chown system system /sys/class/graphics/fb0/msm_fb_persist_mode
-
-    # Update dm-verity state and set partition.*.verified properties
-    verity_update_state
 
 on boot
     # Cover mode
