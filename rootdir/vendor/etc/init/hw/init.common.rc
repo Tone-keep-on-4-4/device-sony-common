@@ -61,6 +61,28 @@ on init
     # Load persistent dm-verity state
     verity_load_state
 
+   # CAF powerhal permissions
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chown system system /sys/module/msm_dcvs/cores/cpu0/slack_time_max_us
+    chown system system /sys/module/msm_dcvs/cores/cpu0/slack_time_min_us
+    chown system system /sys/module/msm_mpdecision/slack_time_max_us
+    chown system system /sys/module/msm_mpdecision/slack_time_min_us
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+    chown system system /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chmod 0660 /sys/module/msm_dcvs/cores/cpu0/slack_time_max_us
+    chmod 0660 /sys/module/msm_dcvs/cores/cpu0/slack_time_min_us
+    chmod 0660 /sys/module/msm_mpdecision/slack_time_max_us
+    chmod 0660 /sys/module/msm_mpdecision/slack_time_min_us
+    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chmod 0660 /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+    chmod 0660 /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+    chmod 0660 /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+
 on fs
     # Start HW service manager early
     start hwservicemanager
