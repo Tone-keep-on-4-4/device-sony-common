@@ -31,6 +31,10 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle
 
+# Audio deps
+PRODUCT_PACKAGES += \
+    libfmq
+
 # GFX
 PRODUCT_PACKAGES += \
     libhdmi \
@@ -71,7 +75,6 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
     NfcNci \
     Tag
 
@@ -124,8 +127,7 @@ PRODUCT_PACKAGES += \
 
 # AOSP Packages
 PRODUCT_PACKAGES += \
-    Launcher3 \
-    libemoji \
+    Launcher3QuickStep \
     libion \
     libjson \
     libxml2 \

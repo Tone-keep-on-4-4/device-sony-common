@@ -100,6 +100,9 @@ BUILD_KERNEL := true
 -include $(KERNEL_PATH)/common-headers/KernelHeaders.mk
 -include $(KERNEL_PATH)/common-kernel/KernelConfig.mk
 
+# SELinux
+include device/sony/sepolicy/sepolicy.mk
+
 # Include build helpers for QCOM proprietary
 -include vendor/qcom/proprietary/common/build/proprietary-build.mk
 
