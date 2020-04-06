@@ -106,14 +106,7 @@ on late-fs
     # Start devices by sysfs trigger
     start devstart_sh
 
-service logcat_charger /system/bin/logcat -b all -f /cache/logcat.txt -v threadtime
-    class main
-    user root
-    group system
-    disabled
-
 on post-fs-data
-    start logcat_charger
 
     # We can start netd here before in is launched in common init.rc on zygote-start
     start netd
