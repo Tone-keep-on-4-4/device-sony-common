@@ -154,10 +154,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qcom.adreno.qgl.ShaderStorageImageExtendedFormats=0
 
-# Vendor version
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.odm.expect.version=$(PLATFORM_VERSION)_$(SOMC_KERNEL_VERSION)_$(SOMC_PLATFORM)_$(TARGET_VENDOR_VERSION)
-
 # Priv-app permisisons
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.control_privapp_permissions=log
