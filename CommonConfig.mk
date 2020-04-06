@@ -103,6 +103,9 @@ BUILD_KERNEL := true
 # SELinux
 include device/sony/sepolicy/sepolicy.mk
 
+# Prop
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+
 # Include build helpers for QCOM proprietary
 -include vendor/qcom/proprietary/common/build/proprietary-build.mk
 
