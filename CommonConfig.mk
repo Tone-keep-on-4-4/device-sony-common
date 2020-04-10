@@ -44,6 +44,8 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 # Use mke2fs to create ext4 images
 TARGET_USES_MKE2FS := true
 TARGET_USERIMAGES_USE_EXT4 := true
+# F2FS
+TARGET_USERIMAGES_USE_F2FS := true
 
 BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist odm
 
