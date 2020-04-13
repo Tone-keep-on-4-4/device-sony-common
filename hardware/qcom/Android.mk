@@ -11,7 +11,7 @@ MSM_VIDC_TARGET_LIST := msm8996 msm8998 sdm660 sdm845
 #List of targets that use master side content protection
 MASTER_SIDE_CP_TARGET_LIST := msm8996 msm8998 sdm660 sdm845
 
-audio-hal := hardware/qcom/audio/default
+audio-hal := hardware/qcom/audio
 display-hal := hardware/qcom/display/msm8998
 QCOM_MEDIA_ROOT := hardware/qcom/media/msm8998
 OMX_VIDEO_PATH := mm-video-v4l2
