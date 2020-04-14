@@ -111,6 +111,8 @@ WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 # custom ROM's kernel build system, e.g. LineageOS' or PE's.
 BUILD_KERNEL ?= true
 
+TARGET_KERNEL_SOURCE := kernel/sony/msm-4.4/kernel
+
 -include $(KERNEL_PATH)/common-kernel/KernelConfig.mk
 
 # SELinux

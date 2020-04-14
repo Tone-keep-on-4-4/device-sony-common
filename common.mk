@@ -18,6 +18,8 @@ TARGET_VENDOR_VERSION := v17
 # Common path
 COMMON_PATH := device/sony/common
 
+TARGET_KERNEL_HEADERS := kernel/sony/msm-4.4/kernel
+
 # Build scripts
 SONY_CLEAR_VARS := $(COMMON_PATH)/sony_clear_vars.mk
 SONY_BUILD_SYMLINKS := $(COMMON_PATH)/sony_build_symlinks.mk
