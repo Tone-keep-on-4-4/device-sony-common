@@ -53,17 +53,11 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    libloc_core \
-    libgps.utils \
-    liblocation_api \
-    libloc_pla \
-    libgnss
-
-# Location
-PRODUCT_PACKAGES += \
-    libloc_api_v02 \
-    libloc_ds_api \
-    libgnsspps
+    android.hardware.gnss@1.0-impl-qti \
+    libcurl \
+    libgnss \
+    libgnsspps \
+    libsensorndkbridge
 
 # WLAN
 PRODUCT_PACKAGES += \
