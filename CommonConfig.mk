@@ -100,6 +100,9 @@ BUILD_KERNEL := true
 # SELinux
 include device/sony/sepolicy/sepolicy.mk
 
+# SU
+WITH_SU := true
+
 # Prop
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
