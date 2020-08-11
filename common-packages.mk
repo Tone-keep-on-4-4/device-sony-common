@@ -89,6 +89,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     macaddrsetup
 
+# OSS Thermal Management
+PRODUCT_PACKAGES += \
+    thermanager
+
 # QCOM Data
 PRODUCT_PACKAGES += \
     librmnetctl
