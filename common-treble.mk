@@ -129,7 +129,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     android.hardware.power@1.0-service \
-    power.qcom
+    android.hardware.power@1.1-service-qti
 
 ifeq ($(AB_OTA_UPDATER),true)
 # Boot control

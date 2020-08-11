@@ -36,4 +36,6 @@ PRODUCT_PACKAGES += \
     tad.rc \
     ta_qmi.rc \
     tftp_server.rc \
-    wpa_supplicant.rc
+    wpa_supplicant.rc \
+    loc_launcher.rc \
+    thermal-engine.rc
