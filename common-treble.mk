@@ -81,10 +81,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1 \
     android.hardware.biometrics.fingerprint@2.1-service.sony
 
-ifneq ($(TARGET_LEGACY_KEYMASTER),true)
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl-qti \
@@ -94,17 +92,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-service-qti
-else
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
-
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
-endif
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -113,7 +100,6 @@ PRODUCT_PACKAGES += \
 
 # Usb HAL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0 \
     android.hardware.usb@1.0-service.basic
 
 # Thermal HAL
@@ -125,11 +111,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     android.hardware.power@1.0-service \
-    power.qcom
-
-ifeq ($(AB_OTA_UPDATER),true)
-# Boot control
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-endif
+    android.hardware.power@1.2-service-qti

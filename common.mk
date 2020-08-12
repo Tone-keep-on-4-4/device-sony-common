@@ -111,6 +111,10 @@ PRODUCT_COPY_FILES += \
     device/sample/etc/old-apns-conf.xml:system/etc/old-apns-conf.xml \
     device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 
+SRC_OPENSOURCE_INTERFACES_DIR ?= vendor/qcom/opensource/interfaces-legacy
+PRODUCT_SOONG_NAMESPACES += \
+    $(SRC_OPENSOURCE_INTERFACES_DIR)
+
 PRODUCT_CUSTOM_IMAGE_MAKEFILES := $(COMMON_PATH)/odm.mk
 
 -include device/sony/customization/customization.mk
