@@ -381,3 +381,7 @@ on property:sys.boot_completed=1
 on property:sys.listeners.registered=true
     # load IPA FWs
     start ipastart_sh
+
+on property:sys.listeners.registered=*
+    setprop sys.keymaster.loaded ${vendor.sys.listeners.registered}
+    setprop vendor.sys.keymaster.loaded ${vendor.sys.listeners.registered}
