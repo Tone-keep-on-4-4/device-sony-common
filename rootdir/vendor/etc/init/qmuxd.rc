@@ -3,7 +3,7 @@ on boot
     chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
 
 # Qmi MUX Daemon
-service qmuxd /odm/bin/qmuxd
+service vendor.qmuxd /vendor/bin/qmuxd
     class main
     user radio
     group radio audio bluetooth wakelock gps nfc diag

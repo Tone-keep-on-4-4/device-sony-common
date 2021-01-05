@@ -91,13 +91,6 @@ PRODUCT_PACKAGES += \
     init.qcom.devstart.sh \
     init.qcom.ipastart.sh
 
-# Depend on symlink creation in /vendor:
-PRODUCT_PACKAGES += \
-    adreno_symlinks \
-    camera_symlinks \
-    qca_cld3_symlinks \
-    tftp_symlinks
-
 PRODUCT_PACKAGES += \
     odm_build_prop_version
 

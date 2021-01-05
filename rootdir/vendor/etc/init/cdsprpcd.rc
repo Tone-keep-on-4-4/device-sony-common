@@ -1,9 +1,9 @@
-service cdsprpcd /odm/bin/cdsprpcd
+service vendor.cdsprpcd /vendor/bin/cdsprpcd
    class main
    user system
    group system
    disabled
 
 on property:ro.board.platform=sdm845
-    enable cdsprpcd
+    enable vendor.cdsprpcd
 
