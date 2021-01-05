@@ -59,6 +59,11 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libsensorndkbridge
 
+# Net
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0 \
+    libandroid_net
+
 # WLAN
 PRODUCT_PACKAGES += \
     p2p_supplicant.conf \
