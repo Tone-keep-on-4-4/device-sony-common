@@ -15,7 +15,6 @@
 # Common init services
 PRODUCT_PACKAGES += \
     init.usb.rc \
-    adb_tcp.rc \
     adsprpcd.rc \
     cdsprpcd.rc \
     cnss-daemon.rc \
