@@ -98,7 +98,7 @@ BUILD_KERNEL := true
 -include $(KERNEL_PATH)/common-kernel/KernelConfig.mk
 
 # SELinux
-include device/sony/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
 
 # SU
 WITH_SU := true
