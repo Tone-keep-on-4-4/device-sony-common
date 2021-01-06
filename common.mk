@@ -43,10 +43,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/gps_debug.conf:system/etc/gps_debug.conf
 
-# Sensors common
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/vendor/etc/sensors/sensors_settings:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensors_settings
-
 # QMI
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
