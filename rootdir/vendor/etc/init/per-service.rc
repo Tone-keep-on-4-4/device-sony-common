@@ -1,5 +1,5 @@
 # PM service
-service per_mgr /odm/bin/pm-service
+service per_mgr /vendor/bin/pm-service
     class core
     user system
     group system

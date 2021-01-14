@@ -1,10 +1,10 @@
 # ADSP FastRPC
-service adsprpcd /odm/bin/adsprpcd
+service adsprpcd /vendor/bin/adsprpcd
    class main
    user media
    group media
 
-service audiopd /odm/bin/adsprpcd audiopd
+service audiopd /vendor/bin/adsprpcd audiopd
    class main
    user media
    group media

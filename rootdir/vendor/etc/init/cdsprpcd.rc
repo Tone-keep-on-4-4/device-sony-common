@@ -1,4 +1,4 @@
-service cdsprpcd /odm/bin/cdsprpcd
+service cdsprpcd /vendor/bin/cdsprpcd
    class main
    user system
    group system
