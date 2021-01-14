@@ -116,7 +116,7 @@ TARGET_KERNEL_SOURCE := kernel/sony/msm-4.4/kernel
 -include $(KERNEL_PATH)/common-kernel/KernelConfig.mk
 
 # SELinux
-include device/sony/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/sepolicy.mk
 
 # Prop
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
