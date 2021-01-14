@@ -4,19 +4,19 @@ user: AID_ROOT
 group: AID_SHELL
 caps: 0
 
-[odm/bin/cnss-daemon]
+[vendor/bin/cnss-daemon]
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE
 
-[odm/bin/pm-service]
+[vendor/bin/pm-service]
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
 caps: NET_BIND_SERVICE
 
-[odm/bin/qmuxd]
+[vendor/bin/qmuxd]
 mode: 0755
 user: AID_SYSTEM
 group: AID_SYSTEM
