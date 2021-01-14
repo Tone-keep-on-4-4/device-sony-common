@@ -48,7 +48,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # F2FS
 TARGET_USERIMAGES_USE_F2FS := true
 
-BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist odm
+BOARD_ROOT_EXTRA_FOLDERS := bt_firmware firmware persist odm
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
