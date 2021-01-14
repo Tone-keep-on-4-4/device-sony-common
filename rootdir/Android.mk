@@ -12,26 +12,6 @@ include $(BUILD_PREBUILT)
 endif
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.gatekeeper@1.0-service-qti
-LOCAL_SRC_FILES := vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_STEM := android.hardware.gatekeeper@1.0-service-qti
-LOCAL_MODULE_SUFFIX := .rc
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := android.hardware.keymaster@3.0-service-qti
-LOCAL_SRC_FILES := vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_STEM := android.hardware.keymaster@3.0-service-qti
-LOCAL_MODULE_SUFFIX := .rc
-LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_VENDOR)/etc/init
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := init.qcom.devstart.sh
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_SRC_FILES_arm64 := vendor/bin/init.qcom.devstart.sh
